@@ -22,5 +22,53 @@
     "articleUrl": "stories/sichuan-tibet.html",
     "published": true,
     "source": "notion"
+  },
+  {
+    "id": 2,
+    "name": "云南骑行 · Yunnan Cycling",
+    "subtitle": "4 Days from Dali to Shangri-La",
+    "date": "2024-10-01",
+    "distance": "320km",
+    "elevation": "3,300m max (哈巴雪山 Haba Snow Mountain)",
+    "weather": "8°C to 18°C，连续雨天",
+    "mood": "Three days of rain, soaked to the bone. The mountains don't care how hard you try — weather has no mercy, and no romance either. That's exactly why it's real.",
+    "image": "https://res.cloudinary.com/dkegctzhy/image/upload/v1774162991/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-03-22_150256_955_mmkwyi.jpg",
+    "coordinates": [
+      [
+        100.1675,
+        25.6065
+      ]
+    ],
+    "startPoint": [
+      100.1675,
+      25.6065
+    ],
+    "articleUrl": "stories/yunnan-dali-shangri-la.html",
+    "published": true,
+    "source": "notion"
+  },
+  {
+    "id": 3,
+    "name": "独库公路 · Duku Highway",
+    "subtitle": "6 Days Across the Heart of Tianshan",
+    "date": "2023-09-07",
+    "distance": "561km",
+    "elevation": "3,700m max",
+    "weather": "0°C to 28°C",
+    "mood": "The slopes are always there. Time is on your side. So you climb — unhurried, one pedal at a time — until you're on the other side of the mountain.",
+    "image": "https://res.cloudinary.com/dkegctzhy/image/upload/v1774162682/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-03-22_145747_730_w6kbhl.jpg",
+    "coordinates": [
+      [
+        84.8739,
+        44.015
+      ]
+    ],
+    "startPoint": [
+      84.8739,
+      44.015
+    ],
+    "articleUrl": "stories/duku-highway.html",
+    "published": true,
+    "source": "notion"
   }
 ]
