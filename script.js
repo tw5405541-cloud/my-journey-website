@@ -256,6 +256,8 @@ function addRoutesToMap() {
 // SHOW ROUTE DETAILS IN SIDEBAR
 // ===================================
 
+let sidebarJustOpened = false;
+
 function showRouteDetails(routeId) {
     const route = journeyRoutes.find(r => r.id === routeId);
     if (!route) return;
@@ -298,6 +300,7 @@ function showRouteDetails(routeId) {
     `;
 
     sidebar.classList.add('active');
+    sidebarJustOpened = true;
 }
 
 // ===================================
@@ -311,11 +314,16 @@ document.getElementById('closeSidebar').addEventListener('click', () => {
 // Close sidebar when clicking outside
 document.addEventListener('click', (e) => {
     const sidebar = document.getElementById('routeSidebar');
-    const closebtn = document.getElementById('closeSidebar');
-    
-    if (sidebar.classList.contains('active') && 
-        !sidebar.contains(e.target) && 
-        !e.target.classList.contains('mapboxgl-marker')) {
+
+    if (sidebarJustOpened) {
+        sidebarJustOpened = false;
+        return;
+    }
+
+    const isMarker = e.target.closest && e.target.closest('.mapboxgl-marker');
+    if (isMarker) return;
+
+    if (sidebar.classList.contains('active') && !sidebar.contains(e.target)) {
         sidebar.classList.remove('active');
     }
 });
