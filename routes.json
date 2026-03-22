@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "川藏骑行 · Sichuan-Tibet Highway",
+    "subtitle": "29 Days from Chengdu to Lhasa",
+    "date": "2022-07-05",
+    "distance": "2,300 km",
+    "elevation": "5,030m max (东达山 Dongda Pass)",
+    "weather": "10°C to 35°C",
+    "mood": "On the descent from Dongda, the storm hit. Wind, rain, lightning overhead — and I felt only one thing: let's fight. Maybe life is too comfortable. We forget that survival is a game for the strong.",
+    "image": "https://res.cloudinary.com/dkegctzhy/image/upload/v1774162550/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-03-22_145303_452_s3udgq.jpg",
+    "coordinates": [
+      [
+        104.0668,
+        30.5728
+      ]
+    ],
+    "startPoint": [
+      104.0668,
+      30.5728
+    ],
+    "articleUrl": "stories/sichuan-tibet.html",
+    "published": true,
+    "source": "notion"
+  }
+]
