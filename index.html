@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From forgotten empires to endless horizons - A journey through history, cross-border commerce, and cycling across China's remote regions.">
+    <meta name="keywords" content="bikepacking China, cycling routes China, cross-border ecommerce, Xixia history, adventure cycling">
+    <title>From Forgotten Empires to Endless Horizons</title>
+    
+    <!-- Mapbox GL JS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">THE JOURNEY</a>
+            <ul class="nav-menu">
+                <li><a href="#map" class="nav-link">Map</a></li>
+                <li><a href="#archives" class="nav-link">Archives</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gear" class="nav-link">Essentials</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-video-container">
+            <!-- Placeholder for video background - replace with actual video -->
+            <div class="hero-video-placeholder"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">From Forgotten Empires to Endless Horizons</h1>
+            <p class="hero-subtitle">Beyond the Algorithm: Cycling from Ancient Xixia to the Modern World</p>
+            
+            <div class="hero-statement">
+                <p class="statement-main">I study empires that disappeared. I build supply chains that connect continents. I ride roads that test limits.</p>
+                <p class="statement-detail">From deciphering 西夏 manuscripts in quiet archives to navigating Amazon's algorithms in Shenzhen's towers, from cycling solo across China's remote regions — my journey is about finding patterns in chaos, building bridges between worlds, and documenting what matters.</p>
+            </div>
+            
+            <a href="#map" class="hero-cta">Explore The Journey</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section" id="map">
+        <div class="section-header">
+            <h2 class="section-title">The Journey Map</h2>
+            <p class="section-subtitle">Every route tells a story. Click on any marker to explore.</p>
+        </div>
+        
+        <div id="map" class="journey-map"></div>
+        
+        <!-- Sidebar for route details -->
+        <div class="route-sidebar" id="routeSidebar">
+            <button class="sidebar-close" id="closeSidebar">&times;</button>
+            <div class="sidebar-content" id="sidebarContent">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- The Archives Section -->
+    <section class="archives" id="archives">
+        <div class="section-header">
+            <h2 class="section-title">The Archives</h2>
+            <p class="section-subtitle">Stories from the road</p>
+        </div>
+        
+        <div class="archives-grid">
+            <!-- Archive Card 1 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Chengdu to Lhasa">
+                    <div class="archive-overlay">
+                        <span class="archive-date">May 2023</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Chengdu to Lhasa: The Roof of the World</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Sichuan → Tibet</span>
+                        <span class="meta-item">🚴 2,150 km</span>
+                        <span class="meta-item">⛰️ 5,200m elevation</span>
+                    </div>
+                    <p class="archive-excerpt">Crossing the Tibetan Plateau, where the air is thin and the spirit is boundless. Every pedal stroke at 4,000+ meters is a meditation on endurance.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Archive Card 2 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Duku Highway">
+                    <div class="archive-overlay">
+                        <span class="archive-date">Aug 2023</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Duku Highway: Through the Heart of Tianshan</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Xinjiang</span>
+                        <span class="meta-item">🚴 561 km</span>
+                        <span class="meta-item">⛰️ 3,700m elevation</span>
+                    </div>
+                    <p class="archive-excerpt">One of China's most spectacular mountain roads, connecting different climates and cultures in a single ride.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Archive Card 3 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Qinghai Lake">
+                    <div class="archive-overlay">
+                        <span class="archive-date">Jul 2022</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Around Qinghai Lake: China's Largest Inland Sea</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Qinghai</span>
+                        <span class="meta-item">🚴 360 km</span>
+                        <span class="meta-item">⛰️ 3,200m elevation</span>
+                    </div>
+                    <p class="archive-excerpt">A loop around the sacred lake, where nomadic traditions meet modern infrastructure.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Archive Card 4 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Mohe to Manzhouli">
+                    <div class="archive-overlay">
+                        <span class="archive-date">Sep 2022</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Mohe to Manzhouli: China's Northern Frontier</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Heilongjiang → Inner Mongolia</span>
+                        <span class="meta-item">🚴 1,850 km</span>
+                        <span class="meta-item">🌡️ -15°C to 25°C</span>
+                    </div>
+                    <p class="archive-excerpt">From the northernmost point of China through vast grasslands to the border with Russia.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Archive Card 5 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Helan Mountains">
+                    <div class="archive-overlay">
+                        <span class="archive-date">Apr 2023</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Wuzhong to Helan Mountains: Tracing Xixia Legacy</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Ningxia</span>
+                        <span class="meta-item">🚴 320 km</span>
+                        <span class="meta-item">🏛️ Ancient Xixia sites</span>
+                    </div>
+                    <p class="archive-excerpt">Cycling through the homeland of the Western Xia Dynasty, where my academic research meets physical journey.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Archive Card 6 -->
+            <article class="archive-card">
+                <div class="archive-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Luoyang">
+                    <div class="archive-overlay">
+                        <span class="archive-date">Mar 2023</span>
+                    </div>
+                </div>
+                <div class="archive-content">
+                    <h3 class="archive-title">Zhengzhou to Luoyang: Ancient Capitals Route</h3>
+                    <div class="archive-meta">
+                        <span class="meta-item">📍 Henan</span>
+                        <span class="meta-item">🚴 180 km</span>
+                        <span class="meta-item">🏛️ Historical sites</span>
+                    </div>
+                    <p class="archive-excerpt">A short but historically rich ride connecting two ancient capitals of China.</p>
+                    <a href="#" class="archive-link">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2 class="section-title">Three Dimensions of One Journey</h2>
+        </div>
+        
+        <div class="about-grid">
+            <!-- Historian -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600" alt="Historian">
+                    <div class="about-label">The Historian</div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-title">Decoding Forgotten Empires</h3>
+                    <p class="about-text">As a graduate researcher specializing in Western Xia history, I spend my days in archives deciphering manuscripts from an empire that vanished 800 years ago. The Tangut script, the political structures, the cultural exchanges along the Silk Road — each discovery is a piece of a larger puzzle about how civilizations rise, adapt, and ultimately fade into history.</p>
+                    <p class="about-text">This academic pursuit taught me patience, attention to detail, and the importance of connecting disparate pieces of information — skills that unexpectedly translated into both business operations and long-distance cycling.</p>
+                </div>
+            </div>
+
+            <!-- Cross-border Operator -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Cross-border Operator">
+                    <div class="about-label">The Operator</div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-title">Building Modern Supply Chains</h3>
+                    <p class="about-text">From the quiet of historical archives, I pivoted to the fast-paced world of cross-border e-commerce in Shenzhen. Operating Amazon FBA channels, managing supplier relationships, optimizing logistics — I learned to navigate the complex algorithms and systems that connect Chinese manufacturers with global consumers.</p>
+                    <p class="about-text">Shenzhen taught me about scale, speed, and the invisible infrastructure that makes modern commerce possible. Every product shipped is a small victory in building bridges across borders, not unlike the ancient trade routes I study.</p>
+                </div>
+            </div>
+
+            <!-- Cyclist -->
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600" alt="Cyclist">
+                    <div class="about-label">The Cyclist</div>
+                </div>
+                <div class="about-content">
+                    <h3 class="about-title">Testing Limits on Two Wheels</h3>
+                    <p class="about-text">At 177cm, I'm not the typical build you'd expect for long-distance cycling, but that never stopped me. From the Tibetan Plateau to the northern grasslands, from desert highways to mountain passes — each journey is an exercise in mental and physical endurance.</p>
+                    <p class="about-text">Bikepacking across China's remote regions connects my three identities: I visit historical sites I've studied, I test the gear I source through my supply chains, and I document experiences that matter. The bicycle is my tool for turning abstract knowledge into embodied understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Essentials Section -->
+    <section class="gear" id="gear">
+        <div class="section-header">
+            <h2 class="section-title">My Essentials</h2>
+            <p class="section-subtitle">Tested across thousands of kilometers</p>
+        </div>
+        
+        <div class="gear-grid">
+            <!-- Gear Item 1 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600" alt="Bicycle">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">Touring Bicycle</h3>
+                    <p class="gear-category">Primary Transport</p>
+                    <p class="gear-description">Steel frame touring bike built for reliability over thousands of kilometers. Proven across mountains, deserts, and grasslands.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Gear Item 2 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1606115915090-be18fea23ec7?w=600" alt="Panniers">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">Waterproof Panniers</h3>
+                    <p class="gear-category">Load Carrying</p>
+                    <p class="gear-description">Heavy-duty waterproof panniers that survived monsoons, dust storms, and sub-zero temperatures.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Gear Item 3 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1576633587382-f45a2bfb729b?w=600" alt="Helmet">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">Aero Helmet</h3>
+                    <p class="gear-category">Safety</p>
+                    <p class="gear-description">Lightweight yet protective. Essential for high-altitude and long-distance rides.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Gear Item 4 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600" alt="Technical Wear">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">Technical Base Layers</h3>
+                    <p class="gear-category">Apparel</p>
+                    <p class="gear-description">Quick-dry merino blend that works from -15°C to 35°C. Temperature regulation is everything.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Gear Item 5 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1473188588951-666fce8e7c68?w=600" alt="Navigation">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">GPS Cycling Computer</h3>
+                    <p class="gear-category">Navigation</p>
+                    <p class="gear-description">Reliable GPS navigation with offline maps. Critical for remote regions with no cellular coverage.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+
+            <!-- Gear Item 6 -->
+            <div class="gear-item">
+                <div class="gear-image">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600" alt="Tools">
+                    <div class="gear-status">In Use</div>
+                </div>
+                <div class="gear-content">
+                    <h3 class="gear-name">Multi-Tool Kit</h3>
+                    <p class="gear-category">Maintenance</p>
+                    <p class="gear-description">Compact toolkit with everything needed for roadside repairs. Self-sufficiency is non-negotiable.</p>
+                    <span class="gear-coming-soon">Details Coming Soon</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gear-note">
+            <p><strong>Note:</strong> Detailed gear reviews and custom collaborations coming soon. These items have been tested across some of China's most challenging terrain.</p>
+        </div>
+    </section>
+
+    <!-- Contact/Subscribe Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Join the Journey</h2>
+            <p class="contact-subtitle">Get stories from the road, gear insights, and behind-the-scenes updates.</p>
+            
+            <form class="contact-form" id="subscribeForm">
+                <input type="email" placeholder="Your email address" class="contact-input" required>
+                <button type="submit" class="contact-button">Subscribe</button>
+            </form>
+            
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 The Journey. All rights reserved.</p>
+            <p class="footer-tagline">From forgotten empires to endless horizons</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
